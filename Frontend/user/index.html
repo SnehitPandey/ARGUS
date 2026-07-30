@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Argus | User</title>
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.js"
+			integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/getStyles/getStyles.css" />
+		<script src="/getStyles/getStyles.js"></script>
+		<script src="/js/aos.js"></script>
+		<script src="dashboard.js"></script>
+		<meta name="getStyles" sm="" md="" lg="" xl="" xxl="" />
+		<link rel="apple-touch-icon" href="icons/apple-icon-180.png" />
+		<link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+	</head>
+	<body class="relative">
+		<div
+			class="loader h-screen w-screen bg-red flex aic jcc fd-column txt-white fixed top-0 left-0 z-12">
+			<p class="txt-white fs-9xl" style="font-family: Pacifico">Argus</p>
+		</div>
+		<!-- <header class="fixed top-0 left-0 z-12 w-screen"></header> -->
+		<main
+			class="h-screen w-screen overflow-hidden p-lg flex fd-column gap-sm bg-light">
+			<div id="welcome" class="flex aic jcsb bg-red round-lg p-lg">
+				<div>
+					<p class="fs-xxl txt-white">Welcome Back</p>
+					<h6 id="uname" class="fs-2xl txt-white lh-12-10"></h6>
+				</div>
+				<img
+					id="profilePic"
+					src="/img/user.svg"
+					alt="user"
+					class="h-56 bg-white round-sm" />
+			</div>
+			<div class="mt-128">
+				<h2 class="fs-3xl tac">Having an Emergency?</h2>
+				<p class="tac">
+					Hold the button below to send an
+					<span class="txt-red">SOS</span>
+				</p>
+				<p class="tac">Or Click to see more options.</p>
+				<div
+					style="
+						background: linear-gradient(
+							135deg,
+							var(--red-200),
+							transparent
+						);
+					"
+					class="w-2-3 aspect-square inline-block flex aic jcc round my-32 mx-auto relative">
+					<button id="sos"
+						class="bg-red txt-white w-2-3 aspect-square inline-block round flex aic jcc fd-column fs-5xl"
+						><h3 class="lh-12-10 fw-700" style="user-select: none;">SOS</h3>
+						<p class="tac lh-10-10" style="user-select: none;">Press or Hold 3 seconds</p></button
+					>
+					<button id="police" class="absolute top-0 left-0 bg-red txt-white aic jcc round w-72 aspect-square none"><i class='bx bxs-shield-plus fs-3xl'></i></i></button>
+					<button id="ambulance" class="absolute top-0 right-0 bg-red txt-white aic jcc round w-72 aspect-square none"><i class='bx bxs-ambulance fs-3xl'></i></i></button>
+					<button id="fire" class="absolute bottom-0 left-0 bg-red txt-white aic jcc round w-72 aspect-square none"><i class='bx bxs-hot fs-3xl'></i></i></button>
+					<button id="towing" class="absolute bottom-0 right-0 bg-red txt-white aic jcc round w-72 aspect-square none"><i class='bx bxs-car-mechanic fs-3xl'></i></i></button>
+				</div>
+			</div>
+
+			<div
+				id="contact"
+				class="fixed inset w-9-10 aspect-square bg-white round-sm p-lg border-1 solid border-red"
+				popover></div>
+			<div
+				id="explore"
+				class="fixed inset w-9-10 aspect-square bg-white round-sm p-lg border-1 solid border-red"
+				popover></div>
+		</main>
+		<nav
+			class="fixed bottom-0 left-0 w-screen h-96 flex aic jcsa p-lg bg-white">
+			<button
+				class="flex aic jcc gap-sm fd-column fs-sm txt-red w-60 h-60">
+				<i class="bx bxs-home-smile fs-3xl"></i>Home
+			</button>
+			<button
+				popovertarget="contact"
+				popovertargetaction="show"
+				class="flex aic jcc gap-sm fd-column fs-sm w-60 h-60">
+				<i class="bx bxs-contact fs-3xl"></i>Contact
+			</button>
+			<button
+				popovertarget="explore"
+				popovertargetaction="show"
+				class="flex aic jcc gap-sm fd-column fs-sm w-60 h-60">
+				<i class="bx bxs-shield fs-3xl"></i>Explore
+			</button>
+			<button
+				popovertarget="profile"
+				popovertargetaction="show"
+				class="flex aic jcc gap-sm fd-column fs-sm w-60 h-60">
+				<i class="bx bxs-user fs-3xl"></i>Profile
+			</button>
+		</nav>
+	</body>
+</html>
