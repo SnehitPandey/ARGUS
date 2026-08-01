@@ -32,7 +32,6 @@ ARGUS is a disaster management platform designed to improve emergency response t
 * Node.js
 * Express.js
 * Socket.io
-* JWT Authentication
 * Bycrypt
 
 ### Database
