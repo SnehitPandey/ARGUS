@@ -1,5 +1,9 @@
 # ARGUS – Disaster Management & Emergency Response System
 
+![PAGES](Image/image.jpg)
+
+---
+
 ARGUS is a disaster management platform designed to improve emergency response through real-time incident reporting, volunteer coordination, and intelligent resource management. The platform provides a centralized dashboard for managing disasters while enabling faster communication between affected individuals, volunteers, and response teams.
 
 ## 🚀 Features
@@ -211,12 +215,6 @@ npm start
 | POST   | `/api/sos`           | update SOS status and location  |
 | POST   | `/api/crashdetection`| Route crash detection           |
 | DELETE | `/api/delete`        | Remove a user                   |
-
----
-
-## 📸 Screenshots
-
-![PAGES](Image/image.jpg)
 
 ---
 
