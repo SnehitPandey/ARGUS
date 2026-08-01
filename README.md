@@ -44,7 +44,7 @@ ARGUS is a disaster management platform designed to improve emergency response t
 * REST APIs
 
 ---
-![PAGES](Image/image2.PNG)
+![PAGES](Image/image2.png)
 ---
 
 ## 📂 Project Structure
