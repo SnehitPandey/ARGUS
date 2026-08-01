@@ -216,7 +216,7 @@ npm start
 
 ## 📸 Screenshots
 
-![PAGES](Image\image.jpg)
+![PAGES](Image/image.jpg)
 
 ---
 
